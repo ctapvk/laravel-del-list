@@ -16,7 +16,7 @@ class ShowNumSeeder extends Seeder
     {
         //
         ShowNum::all()->each->delete();
-        foreach (range(1, 6) as $i) {
+        foreach (range(1, 18) as $i) {
             $a = new ShowNum(["name" => "name $i"]);
             $a->save();
         }
